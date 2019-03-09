@@ -20,4 +20,9 @@ li.menu-item {
 .search-block input[type="text"]{
     width: 150px;
 }
+.content-slider {
+}
+ul.slider {
+    list-style: none;
+}
 
