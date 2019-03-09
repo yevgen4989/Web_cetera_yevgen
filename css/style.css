@@ -17,4 +17,7 @@ li.menu-item {
     float: left;
     margin-right:5px;
 }
+.search-block input[type="text"]{
+    width: 150px;
+}
 
