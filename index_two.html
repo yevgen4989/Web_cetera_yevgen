@@ -5,22 +5,12 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Foundation for Sites</title>
-    <link rel="stylesheet" type="text/css" href="./slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css"/>
-
     <link href="css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/foundation.css">
     <link rel="stylesheet" href="css/app.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
-    <script src="./js/jquery-3.3.1.js"></script>
-    <script type="text/javascript" src="./slick/slick.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/vendor/jquery.js"></script>
-    <script src="js/vendor/what-input.js"></script>
-    <script src="js/vendor/foundation.js"></script>
-    <script src="js/app.js"></script>
 </head>
 <body>
 <div class="grid-container">
@@ -62,10 +52,10 @@
 
     </header>
 
- <!-- <section class="content-slider">
+  <section class="content-slider">
         <div class="slider-wrapper">
-            <div class="regular slider">
-                <div >
+            <ul class="slider">
+                <li class="slider-item">
                     <img src="img/bg.jpg" alt="Item imgage 1">
                     <p class="text-top">
 
@@ -77,8 +67,8 @@
                     <p class="text-description">
 
                     </p>
-                </div>
-                <div >
+                </li>
+                <li class="slider-item">
                     <img src="img/bg3.jpg" alt="Item imgage 2">
                     <p class="text-top">
 
@@ -90,8 +80,7 @@
                     <p class="text-description">
 
                     </p>
-                </div>
-                <div >
+                <li class="slider-item">
                     <img src="img/bg4.jpg" alt="Item imgage 3">
                     <p class="text-top">
 
@@ -103,68 +92,17 @@
                     <p class="text-description">
 
                     </p>
-                </div>
-            </div>
-        </div>
-    </section>-->
-
-    <section class="regular slider">
-        <div>
-            <img src="http://placehold.it/350x300?text=1">
-        </div>
-        <div>
-            <img src="http://placehold.it/350x300?text=2">
-        </div>
-        <div>
-            <img src="http://placehold.it/350x300?text=3">
-        </div>
-        <div>
-            <img src="http://placehold.it/350x300?text=4">
-        </div>
-        <div>
-            <img src="http://placehold.it/350x300?text=5">
-        </div>
-        <div>
-            <img src="http://placehold.it/350x300?text=6">
+                </li>
+                </li>
+            </ul>
         </div>
     </section>
 
-
-    <script type="text/javascript">
-        $(".regular").slick({
-            dots: false,
-            infinite: true,
-            slidesToShow: 5,
-            autoplay: true,
-            autoplaySpeed: 1500,
-            slidesToScroll: 1,
-            responsive: [
-                {
-                    breakpoint: 768,
-                    settings: {
-                        arrows: false,
-                        centerMode: true,
-                        slidesToShow: 3
-                    }
-                },
-                {
-                    breakpoint: 480,
-                    settings: {
-                        arrows: false,
-                        centerMode: true,
-                        slidesToShow: 1
-                    }
-                }
-            ]
-        });
-
-
-    </script>
-
-
 </div>
 
-
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script src="js/vendor/jquery.js"></script>
+<script src="js/vendor/what-input.js"></script>
+<script src="js/vendor/foundation.js"></script>
+<script src="js/app.js"></script>
 </body>
 </html>
