@@ -11,6 +11,26 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
           integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
+
+    <link href="component/font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="component/flexslider/flexslider.css" rel="stylesheet">
+    <link href="component/animate/animate.min.css" rel="stylesheet">
+    <!-- Add custom CSS here -->
+
+    <link href="css/style2.css" rel="stylesheet">
+
+
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/less-1.7.0.min.js"></script>
+    <script type="text/javascript" src="component/jQuery-One-Page-Nav/jquery.nav.js"></script>
+    <script src="component/jquery.inview/jquery.inview.min.js"></script>
+    <script src="component/flexslider/jquery.flexslider-min.js"></script>
+    <script src="js/script.js"></script>
+
 
     <script src="js/vendor/jquery.js"></script>
     <script src="js/vendor/what-input.js"></script>
@@ -18,12 +38,8 @@
     <script src="js/app.js"></script>
     <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
     <script src="./slick/slick.min.js" type="text/javascript" charset="utf-8"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 
-
-    <link rel="stylesheet" type="text/css" href="./slick/slick.css">
-    <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
 
 
 </head>
@@ -32,7 +48,7 @@
 <script type="text/javascript">
     $(document).on('ready', function () {
         $(".regular").slick({
-            dots: true,
+            dots: false,
             infinite: true,
             slidesToShow: 1,
             slidesToScroll: 1
@@ -93,6 +109,7 @@
         </div>
 
     </header>
+</div>
 
     <div class="regular slider">
         <div>
@@ -106,7 +123,46 @@
         </div>
     </div>
 
-</div>
+    <section class="page" id="service">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-lg-4 animated hidding" data-animated="bounceInUp">
+                    <div class="build fudi-get text-center">
+                        <div class="get-icon">
+                            <img src="img/vector-1.png" alt="fudi" />
+                        </div>
+                        <h3>GET INSPIRED</h3>
+                        <div class="title-line"></div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisc Pellentesque vel enim a elit viverra elementuma. Aliquam erat volutpat. </p>
+                    </div><!-- end build -->
+                </div><!-- end col -->
+                <div class="col-md-4 col-lg-4 animated hidding delay1" data-animated="bounceInUp">
+                    <div class="build fudi-get text-center">
+                        <div class="get-icon">
+                            <img src="img/vector-2.png" alt="fudi" />
+                        </div>
+                        <h3>GET REWARDED</h3>
+                        <div class="title-line"></div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisc Pellentesque vel enim a elit viverra elementuma. Aliquam erat volutpat. </p>
+                    </div><!-- end build -->
+                </div><!-- end col -->
+                <div class="col-md-4 col-lg-4 animated hidding delay2" data-animated="bounceInUp">
+                    <div class="build fudi-get text-center">
+                        <div class="get-icon">
+                            <img src="img/vector-3.png" alt="fudi" />
+                        </div>
+                        <h3>GET SOCIAL</h3>
+                        <div class="title-line"></div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisc Pellentesque vel enim a elit viverra elementuma. Aliquam erat volutpat. </p>
+                    </div><!-- end build -->
+                </div><!-- end col -->
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </section>
+    <!-- end content -->
+
+
+
 
 </body>
 </html>
