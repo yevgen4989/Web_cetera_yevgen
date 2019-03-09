@@ -6,27 +6,38 @@ header {
     margin-left: 37px;
     margin-top: 10px;
 }
-ul.menu{
-    list-style: none;
-    padding: 0;
-    margin: 0;
+.navbar-expand-lg{
+    margin: 4% 0;
 }
-ul.menu > li.menu-item > a {
+ul.navbar-nav > li.nav-item > a.nav-link{
     color: #f57365;
     text-decoration: none;
     font-size: 13px;
-}
-li.menu-item {
-    float: left;
-    padding: 25px;
     text-transform: uppercase;
+}
+nav.navbar{
+    margin-top: 16px;
+    margin-left: 5px;
+}
+.navbar-nav .nav-item+.nav-item{
+    margin-left: 1.45rem;
+}
+.search-block {
+    margin: 10% 0;
+}
+.search-block > label {
+    padding: 0;
+    margin: 0;
 }
 .search-block input[type="text"]{
     width: 150px;
+    padding: 0;
+    margin: 0;
 }
 .content-slider {
 }
 ul.slider {
     list-style: none;
 }
+
 
