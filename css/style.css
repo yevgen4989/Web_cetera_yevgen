@@ -81,4 +81,23 @@ ul.slider {
     cursor: default;
     color: black;
 }
+.slider-item {
+
+    display: inline-block;
+    position: relative;
+}
+.slider-item img {
+
+    display: block;
+    border:1px solid #fff;
+}
+.slider-item:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(ellipse at 20% 70%, rgba(255,255,255,0) 14%,#2e0d45 100%,#2e0d45 100%,#2e0d45 100%,#2e0d45 100%);
+    position: absolute;
+    top: 0; left: 0;
+}
 
