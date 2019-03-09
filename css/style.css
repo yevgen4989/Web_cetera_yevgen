@@ -81,15 +81,24 @@ ul.slider {
     cursor: default;
     color: black;
 }
+
 .slider-item {
 
     display: inline-block;
     position: relative;
 }
 .slider-item img {
+    display: inline-block;
+    width: auto;
+    height: 675px;
+}
+.slider-item p{
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    color: white;
+    z-index: 3;
 
-    display: block;
-    border:1px solid #fff;
 }
 .slider-item:after {
     content: "";
