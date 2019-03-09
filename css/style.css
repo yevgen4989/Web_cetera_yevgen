@@ -1,3 +1,11 @@
+header {
+    height: 94px;
+}
+.logo > .img-logo {
+    height: 65px;
+    margin-left: 37px;
+    margin-top: 10px;
+}
 ul.menu{
     list-style: none;
     padding: 0;
@@ -9,3 +17,7 @@ li.menu-item {
     float: left;
     margin-right:5px;
 }
+.search-block input[type="text"]{
+    width: 150px;
+}
+
