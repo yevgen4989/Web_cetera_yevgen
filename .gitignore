@@ -1,0 +1,6 @@
+# common, PHPStorm
+.DS_Store
+.idea/*
+Thumbs.db
+db/*
+tmp/*
