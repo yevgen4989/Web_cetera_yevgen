@@ -14,6 +14,7 @@ ul.navbar-nav > li.nav-item > a.nav-link{
     text-decoration: none;
     font-size: 13px;
     text-transform: uppercase;
+    font-weight: 500;
 }
 nav.navbar{
     margin-top: 16px;
@@ -29,10 +30,26 @@ nav.navbar{
     padding: 0;
     margin: 0;
 }
-.search-block input[type="text"]{
-    width: 150px;
+.search-block input[type="search"]{
+    width: 180px;
     padding: 0;
     margin: 0;
+    padding-left: 10px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    -webkit-appearance: none;
+    vertical-align: middle;
+}
+.search-block input[type="submit"]{
+    width: 20px;
+    height: 20px;
+    border: none;
+}
+.search-button{
+    float: right;
+    margin-top: -32px;
+    margin-right: 16px;
 }
 .content-slider {
 }
@@ -40,4 +57,12 @@ ul.slider {
     list-style: none;
 }
 
+.contact-telephone{
+    margin: 10% 0;
+    padding: 5px 10px;
+}
+.contact-telephone > a{
+    color: black;
+    font-weight: 500;
+}
 
