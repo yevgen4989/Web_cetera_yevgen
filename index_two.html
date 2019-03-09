@@ -5,14 +5,81 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Foundation for Sites</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/bootstrap.min.css" rel="stylesheet"/>
     <link rel="stylesheet" href="css/foundation.css">
     <link rel="stylesheet" href="css/app.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+          integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/app.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+    <script src="./slick/slick.min.js" type="text/javascript" charset="utf-8"></script>
+
+
+    <link rel="stylesheet" type="text/css" href="./slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
+    <style type="text/css">
+        html, body {
+            margin: 0;
+            padding: 0;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .slider {
+            width: 50%;
+            margin: 100px auto;
+        }
+
+        .slick-slide {
+            margin: 0px 20px;
+        }
+
+        .slick-slide img {
+            width: 100%;
+        }
+
+        .slick-prev:before,
+        .slick-next:before {
+            color: black;
+        }
+
+        .slick-slide {
+            transition: all ease-in-out .3s;
+            opacity: .2;
+        }
+
+        .slick-active {
+            opacity: .5;
+        }
+
+        .slick-current {
+            opacity: 1;
+        }
+    </style>
+
 
 </head>
 <body>
+
+<script type="text/javascript">
+    $(document).on('ready', function () {
+        $(".regular").slick({
+            dots: true,
+            infinite: true,
+            slidesToShow: 1,
+            slidesToScroll: 1
+        });
+    });
+</script>
+
+
 <div class="grid-container">
     <header>
         <div class="grid-x grid-padding-x">
@@ -52,57 +119,19 @@
 
     </header>
 
-  <section class="content-slider">
-        <div class="slider-wrapper">
-            <ul class="slider">
-                <li class="slider-item">
-                    <img src="img/bg.jpg" alt="Item imgage 1">
-                    <p class="text-top">
-
-                    </p>
-                    <p class="text-title">
-
-                    </p>
-                    <a href="" class="button-slider"></a>
-                    <p class="text-description">
-
-                    </p>
-                </li>
-                <li class="slider-item">
-                    <img src="img/bg3.jpg" alt="Item imgage 2">
-                    <p class="text-top">
-
-                    </p>
-                    <p class="text-title">
-
-                    </p>
-                    <a href="" class="button-slider"></a>
-                    <p class="text-description">
-
-                    </p>
-                <li class="slider-item">
-                    <img src="img/bg4.jpg" alt="Item imgage 3">
-                    <p class="text-top">
-
-                    </p>
-                    <p class="text-title">
-
-                    </p>
-                    <a href="" class="button-slider"></a>
-                    <p class="text-description">
-
-                    </p>
-                </li>
-                </li>
-            </ul>
+    <div class="regular slider">
+        <div>
+            <img src="img/bg.jpg" alt="Item imgage 1">
         </div>
-    </section>
+        <div>
+            <img src="img/bg3.jpg" alt="Item imgage 2">
+        </div>
+        <div>
+            <img src="img/bg4.jpg" alt="Item imgage 3">
+        </div>
+    </div>
 
 </div>
 
-<script src="js/vendor/jquery.js"></script>
-<script src="js/vendor/what-input.js"></script>
-<script src="js/vendor/foundation.js"></script>
-<script src="js/app.js"></script>
 </body>
 </html>
