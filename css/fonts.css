@@ -1,0 +1,31 @@
+@font-face {
+    font-family: "Lato-Black", sans-serif;
+    src: url("Lato-Black.ttf");
+}
+@font-face {
+    font-family: "Lato-Bold", sans-serif;
+    src: url("Lato-Bold.ttf");
+}
+@font-face {
+    font-family: "Lato-Hairline", sans-serif;
+    src: url("Lato-Hairline.ttf");
+}
+@font-face {
+    font-family: "Lato-Light", sans-serif;
+    src: url("Lato-Light.ttf");
+}
+@font-face {
+    font-family: "Lato-LightItalic", sans-serif;
+    src: url("Lato-LightItalic.ttf");
+}
+@font-face {
+    font-family: "Lato", sans-serif;
+    src: url("Lato-Regular.ttf");
+}
+@font-face {
+    font-family: "Open Sans", sans-serif;
+    src: url("OpenSans-Regular.ttf");
+}
+@font-face {
+    font-family: "Times-New-Roman", sans-serif;
+}

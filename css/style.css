@@ -1,3 +1,37 @@
+@font-face {
+    font-family: OpenSans;
+    src: url(../css/OpenSans-Regular.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: Lato-Bold;
+    src: url(../css/Lato-Bold.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: Lato-Black;
+    src: url(../css/Lato-Black.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: Lato;
+    src: url(../css/Lato-Regular.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: Lato-Light;
+    src: url(../css/Lato-Light.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: Lato-Hairline;
+    src: url(../css/Lato-Hairline.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: Lato-LightItalic;
+    src: url(../css/Lato-LightItalic.ttf) format('truetype')
+}
 body {
     overflow-x: hidden;
 }
@@ -73,10 +107,13 @@ ul.slider {
     padding-left: 20px;
 }
 .breadcrumbs > p > a {
+    font-family: Lato, sans-serif;
     font-size: 16px;
     color: #f57365;
+    padding: 1px 5px;
 }
 .breadcrumbs > p > a.current {
+    font-family: "Lato", sans-serif;
     pointer-events: none;
     cursor: default;
     color: black;
@@ -108,5 +145,108 @@ ul.slider {
     background: radial-gradient(ellipse at 20% 70%, rgba(255,255,255,0) 14%,#2e0d45 100%,#2e0d45 100%,#2e0d45 100%,#2e0d45 100%);
     position: absolute;
     top: 0; left: 0;
+}
+.slider-item .button-slider {
+    font-family: Lato-Bold, sans-serif;
+    font-size: 18px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: white;
+    z-index: 4;
+    border: 3px white solid;
+    padding: 17.5px 103px;
+    transform: translate(-185%,550%);
+    outline: none;
+    text-transform: uppercase;
+    border-radius: 2px;
+    transition: all 0.5s;
+}
+.slider-item .button-slider:hover {
+    text-decoration: none;
+    border-radius: 2px;
+    border: 3px #f57365 solid;
+    background-color: #f57365;
+}
+.slider-item .title {
+    font-family: Lato-Bold, sans-serif;
+    font-size: 100px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: white;
+    z-index: 4;
+    transform: translate(-85%,130%);
+    outline: none;
+    text-transform: uppercase;
+}
+.slider-item .before-title{
+    font-family: Times New Roman, sans-serif;
+    font-style: italic;
+    font-size: 36px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: white;
+    z-index: 4;
+    transform: translate(-240%,340%);
+    outline: none;
+    opacity: 0.7;
+}
+.slider-item .after-title{
+    font-family: Lato, sans-serif;
+    font-size: 14px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: white;
+    z-index: 4;
+    transform: translate(-90%,2080%);
+    outline: none;
+    text-transform: uppercase;
+}
+.slider-item .after-title a{
+    color: white;
+    text-decoration: none;
+    border-bottom: 1px white solid;
+    outline: none;
+    transition: all 0.3s;
+}
+.slider-item .after-title a:hover{
+    color: #f57365;
+    text-decoration: none;
+    border-bottom: 1px #f57365 solid;
+    outline: none;
+}
+.title-category{
+    font-family: Lato-Bold, sans-serif;
+    font-weight:600;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: black;
+    padding-left: 20px;
+}
+.list-category {
+    list-style: none;
+}
+.list-category > .category-item {
+    border-bottom: 1px #f57365 solid;
+}
+.list-category > .category-item:last-child{
+    border: 0;
+}
+.list-category > .category-item > a{
+    display: block;
+    font-family: Lato-Bold, sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    color: black;
+    width: auto;
+    padding: 19px 0;
+}
+.list-category > .category-item > a:hover{
+    text-decoration: none;
+    color: #f57365;
+    transition: all 0.2s;
 }
 
