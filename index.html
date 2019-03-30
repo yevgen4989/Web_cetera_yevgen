@@ -1,186 +1,583 @@
-
 <!doctype html>
 <html class="no-js" lang="en" dir="ltr">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Foundation for Sites</title>
-    <link rel="stylesheet" href="css/foundation.css">
-    <link rel="stylesheet" href="css/app.css">
+    <!--<link href="css/bootstrap.min.css" rel="stylesheet"/>-->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js" type="text/javascript"></script>
+     <link href="css/style.css" rel="stylesheet">
+
+
+    <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.1/css/foundation.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.1/css/foundation.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css">
+
+    <script type="text/javascript" src = "https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.1/js/foundation.min.js"></script>
+     <script type="text/javascript" src = "https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.1/js/foundation.js"></script>
+
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+          integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+
+    <link rel="stylesheet" type="text/css" href="./slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
+    <script src="./slick/slick.min.js" type="text/javascript" charset="utf-8"></script>
+
+
 </head>
 <body>
-<div class="grid-container">
-    <div class="grid-x grid-padding-x">
-        <div class="large-12 cell">
-            <h1>Welcome to Foundation</h1>
-        </div>
-    </div>
 
-    <div class="grid-x grid-padding-x">
-        <div class="large-12 cell">
-            <div class="callout">
-                <h3>We&rsquo;re stoked you want to try Foundation! </h3>
-                <p>To get going, this file (index.html) includes some basic styles you can modify, play around with, or
-                    totally destroy to get going.</p>
-                <p>Once you've exhausted the fun in this document, you should check out:</p>
-                <div class="grid-x grid-padding-x">
-                    <div class="large-4 medium-4 cell">
-                        <p><a href="http://foundation.zurb.com/docs">Foundation Documentation</a><br/>Everything you
-                            need to know about using the framework.</p>
-                    </div>
-                    <div class="large-4 medium-4 cell">
-                        <p><a href="http://zurb.com/university/code-skills">Foundation Code Skills</a><br/>These online
-                            courses offer you a chance to better understand how Foundation works and how you can master
-                            it to create awesome projects.</p>
-                    </div>
-                    <div class="large-4 medium-4 cell">
-                        <p><a href="http://foundation.zurb.com/forum">Foundation Forum</a><br/>Join the Foundation
-                            community to ask a question or show off your knowledge.</p>
-                    </div>
+<script type="text/javascript">
+    $(document).on('ready', function () {
+        $(".regular").slick({
+            dots: false,
+            infinite: true,
+            slidesToShow: 1,
+            slidesToScroll: 1
+        });
+        $(document).foundation();
+    });
+
+</script>
+
+
+<div class="container">
+    <header>
+        <div class="row expanded">
+            <div class="small-12 medium-3 large-1">
+                <div class="logo">
+                    <img class="img-logo" src="img/logo2.png" alt="Fudi Logo">
                 </div>
-                <div class="grid-x grid-padding-x">
-                    <div class="large-4 medium-4 medium-push-2 cell">
-                        <p><a href="http://github.com/zurb/foundation">Foundation on Github</a><br/>Latest code, issue
-                            reports, feature requests and more.</p>
+            </div>
+            <div class="large-7">
+                <nav class="navbar-expand-lg">
+                    <div class="collapse navbar-collapse">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">О нас</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Наши услуги</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="#">Медиа</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="#">Отзывы</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="#">Наши контакты</a>
+                            </li>
+                        </ul>
                     </div>
-                    <div class="large-4 medium-4 medium-pull-2 cell">
-                        <p><a href="https://twitter.com/ZURBfoundation">@zurbfoundation</a><br/>Ping us on Twitter if
-                            you have questions. When you build something with this we'd love to see it (and send you a
-                            totally boss sticker).</p>
-                    </div>
+                </nav>
+
+
+
+            </div>
+
+
+
+            <div class="small-12 medium-3 large-2">
+                <div class="search-block">
+                    <label>
+                        <input type="search">
+                        <button class="search-button"><i class="fas fa-search"></i></button>
+
+                    </label>
+                    <i class="icon"></i>
+                </div>
+            </div>
+            <div class="small-12 medium-3 large-2">
+                <div class="contact-telephone large-text-right">
+                    <a class="tel" href="tel:7900556899">+7 (900) 55 68 99</a>
                 </div>
             </div>
         </div>
+
+    </header>
+</div>
+<div class="regular slider">
+    <div class="slider-item">
+        <img src="img/bg.jpg" alt="Item imgage 1">
+        <div class="block-slider text-center">
+            <p class="before-title">Ваши любимые</p>
+            <p class="title">Рецепты</p>
+            <a href="#" class="button-slider">Узнать</a>
+            <p class="after-title">Вы также можете прислать свои рецепты и <a href="#">получить бонус</a></p>
+        </div>
     </div>
+    <div class="slider-item">
+        <img src="img/bg3.jpg" alt="Item imgage 2">
+        <div class="block-slider text-center">
+            <p class="before-title">Ваши любимые</p>
+            <p class="title">Рецепты</p>
+            <a href="#" class="button-slider">Узнать</a>
+            <p class="after-title">Вы также можете прислать свои рецепты и <a href="#">получить бонус</a></p>
+        </div>
+    </div>
+    <div class="slider-item">
+        <img src="img/bg4.jpg" alt="Item imgage 3">
+        <div class="block-slider text-center">
+            <p class="before-title">Ваши любимые</p>
+            <p class="title">Рецепты</p>
+            <a href="#" class="button-slider">Узнать</a>
+            <p class="after-title">Вы также можете прислать свои рецепты и <a href="#">получить бонус</a></p>
+        </div>
+    </div>
+</div>
 
-    <div class="grid-x grid-padding-x">
-        <div class="large-8 medium-8 cell">
-            <h5>Here&rsquo;s your basic grid:</h5>
-            <!-- Grid Example -->
 
-            <div class="grid-x grid-padding-x">
-                <div class="large-12 cell">
-                    <div class="primary callout">
-                        <p><strong>This is a  twelve cell section in a grid-x.</strong> Each of these includes a
-                            div.callout element so you can see where the cell are - it's not required at all for the
-                            grid.</p>
-                    </div>
+
+
+<div class="container">
+    <div class="row expanded">
+        <div class="small-12 medium-12 large-12">
+            <div class="breadcrumbs">
+                <p>
+                    <a href="#">Главная</a> / <a href="#">Катагория</a> / <a href="#" class="current">Раздел</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="row expanded">
+        <div class="small-12 medium-4 large-4 columns">
+            <div class="build fudi-get text-center">
+                <div class="get-icon">
+                    <img src="img/vector-1.png" alt="fudi"/>
+                </div>
+                <h3>GET INSPIRED</h3>
+                <div class="title-line"></div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisc Pellentesque vel enim a elit viverra elementuma.
+                    Aliquam erat volutpat. </p>
+            </div>
+        </div>
+        <div class="small-12 medium-4 large-4 columns">
+            <div class="build fudi-get text-center">
+                <div class="get-icon">
+                    <img src="img/vector-2.png" alt="fudi"/>
+                </div>
+                <h3>GET REWARDED</h3>
+                <div class="title-line"></div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisc Pellentesque vel enim a elit viverra elementuma.
+                    Aliquam erat volutpat. </p>
+            </div>
+        </div>
+        <div class="small-12 medium-4 large-4 columns">
+            <div class="build fudi-get text-center">
+                <div class="get-icon">
+                    <img src="img/vector-3.png" alt="fudi"/>
+                </div>
+                <h3>GET SOCIAL</h3>
+                <div class="title-line"></div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisc Pellentesque vel enim a elit viverra elementuma.
+                    Aliquam erat volutpat. </p>
+            </div>
+        </div>
+    </div>
+    <div class="row expanded">
+        <div class="small-12 medium-4 large-3">
+            <div class="sidebar">
+                <p class="title-category">Список рецептов</p>
+                <ul class="list-category">
+                    <li class="category-item"><a href="#">Новые рецепты</a></li>
+                    <li class="category-item"><a href="#">Рекомендуемые экспертами</a></li>
+                    <li class="category-item"><a href="#">Избранные рецепты</a></li>
+                    <li class="category-item"><a href="#">Популярные рецепты</a></li>
+                    <li class="category-item"><a href="#">Быстрые рецепты</a></li>
+                    <li class="category-item"><a href="#">Базовые рецепты</a></li>
+                    <li class="category-item"><a href="#">Разное</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="small-12 medium-8 large-9">
+            <div class="block-with-table sub-container">
+                <div class="title-block">
+                    <p>Заголовок для текста</p>
+                    <hr class="line">
+                </div>
+                <div class="text-block">
+                    <p>Morbi eget posuere dolor. Pellentesque cursus aliquet aliquet. Aeneanet felis sit amet diam
+                        mollis ullamcorper
+                        Nullam consequat sem a ante vest ibulum tristique. Suspendisse tristique lacus ac mattis
+                        porta. </p>
+
+                    <p class="pod-title">Подзаголовок</p>
+                    <p>
+                        Vivamus ligula quam, vehicula non lacinia sed, faucibus sit amet libero. In libero dui, eleifend
+                        eu nisi id, egestas
+                        fringilla odio. In varius quam a mas sa hendrerit ullamcorper a eu justo. Suspendisse porta
+                        mattis convallis.
+                        Aenean tempus ligula ac odio rhoncus, quis aliquam dolor accumsan.
+                    </p>
+                    <ul class="list-text-block">
+                        <li><p class="list-item">Morbi eget posuere dolor</p></li>
+                        <li><p class="list-item">Suspendisse porta mattis convallis</p></li>
+                        <li><p class="list-item">Aenean tempus ligula ac odio rhoncus, quis aliquam dolor accumsan</p>
+                        </li>
+                    </ul>
+
+                    <table>
+                        <tr>
+                            <th>Подзаголовок таблицы</th>
+                            <th>Колонка2</th>
+                            <th>Колонка3</th>
+                            <th>Колонка4</th>
+                        </tr>
+                        <tr>
+                            <td>Morbi eget posuere dolor. Pellentesque cursus aliquet aliquet.</td>
+                            <td>20 000</td>
+                            <td>30 000</td>
+                            <td>40 000</td>
+                        </tr>
+                        <tr>
+                            <td>Morbi eget posuere dolor. Pellentesque cursus aliquet aliquet.</td>
+                            <td>20 000</td>
+                            <td>30 000</td>
+                            <td>40 000</td>
+                        </tr>
+                        <tr>
+                            <td>Morbi eget posuere dolor. Pellentesque cursus aliquet aliquet.</td>
+                            <td>45 000</td>
+                            <td>55 000</td>
+                            <td>65 000</td>
+                        </tr>
+                    </table>
+
+
                 </div>
             </div>
-            <div class="grid-x grid-padding-x">
-                <div class="large-6 medium-6 cell">
-                    <div class="primary callout">
-                        <p>Six cell</p>
-                    </div>
+            <div class="feedback sub-container">
+                <div class="title-block">
+                    <p>форма обратной связи</p>
+                    <hr class="line">
                 </div>
-                <div class="large-6 medium-6 cell">
-                    <div class="primary callout">
-                        <p>Six cell</p>
-                    </div>
-                </div>
-            </div>
-            <div class="grid-x grid-padding-x">
-                <div class="large-4 medium-4 small-4 cell">
-                    <div class="primary callout">
-                        <p>Four cell</p>
-                    </div>
-                </div>
-                <div class="large-4 medium-4 small-4 cell">
-                    <div class="primary callout">
-                        <p>Four cell</p>
-                    </div>
-                </div>
-                <div class="large-4 medium-4 small-4 cell">
-                    <div class="primary callout">
-                        <p>Four cell</p>
-                    </div>
-                </div>
-            </div>
-
-            <hr/>
-
-            <h5>We bet you&rsquo;ll need a form somewhere:</h5>
-            <form>
-                <div class="grid-x grid-padding-x">
-                    <div class="large-12 cell">
-                        <label>Input Label</label>
-                        <input type="text" placeholder="large-12.cell"/>
-                    </div>
-                </div>
-                <div class="grid-x grid-padding-x">
-                    <div class="large-4 medium-4 cell">
-                        <label>Input Label</label>
-                        <input type="text" placeholder="large-4.cell"/>
-                    </div>
-                    <div class="large-4 medium-4 cell">
-                        <label>Input Label</label>
-                        <input type="text" placeholder="large-4.cell"/>
-                    </div>
-                    <div class="large-4 medium-4 cell">
-                        <div class="grid-x">
-                            <label>Input Label</label>
-                            <div class="input-group">
-                                <input type="text" placeholder="small-9.cell" class="input-group-field"/>
-                                <span class="input-group-label">.com</span>
+                <form action="">
+                    <div class="inputs">
+                        <div class="row expanded">
+                            <div class="small-12 medium-5 large-6">
+                                <div class="holder">
+                                    <input type="text" name="firstname"/>
+                                    <label>Ваше имя<span>*</span></label>
+                                </div>
                             </div>
+                            <div class="small-12 medium-8 large-6">
+                                <div class="holder">
+                                    <input type="tel" name="telephone"/>
+                                    <label>+7 (XXX) XXX XX XX<span>*</span></label>
+                                </div>
+                            </div>
+                            <div class="small-12 medium-5 large-6">
+                                <div class="holder">
+                                    <input type="email" name="email"/>
+                                    <label>Email</label>
+                                </div>
+                            </div>
+                            <div class="small-12 medium-8 large-6">
+                                <div class="holder">
+                                    <input type="text" name="subject"/>
+                                    <label>Тема</label>
+                                </div>
+                            </div>
+                            <input type="submit" placeholder="Отправить">
                         </div>
                     </div>
+                </form>
+            </div>
+            <div class="news-block sub-container">
+                <div class="title-block">
+                    <p>Новости</p>
+                    <hr class="line">
                 </div>
-                <div class="grid-x grid-padding-x">
-                    <div class="large-12 cell">
-                        <label>Select Box
-                            <select>
-                                <option value="husker">Husker</option>
-                                <option value="starbuck">Starbuck</option>
-                                <option value="hotdog">Hot Dog</option>
-                                <option value="apollo">Apollo</option>
-                            </select>
-                        </label>
+                <ul class="news-list">
+                    <div class="row">
+                        <div class="small-12 medium-4 large-4">
+                            <li class="news-item">
+                                <p class="news-date">05.09.2018</p>
+                                <img src="img/bolbilla-verde.png" alt="News Image 1">
+                                <h4 class="news-title">Заголовок новости</h4>
+                                <p class="news-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                <p class="btn-more"><a href="">Подробнее</a><i>»</i></p>
+                            </li>
+                        </div>
+                        <div class="small-12 medium-4 large-4">
+                            <li class="news-item">
+                                <p class="news-date">08.09.2018</p>
+                                <img src="img/i.png" alt="News Image 2">
+                                <h4 class="news-title">Заголовок новости</h4>
+                                <p class="news-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                <p class="btn-more"><a href="">Подробнее</a><i>»</i></p>
+                            </li>
+                        </div>
+                        <div class="small-12 medium-4 large-4">
+                            <li class="news-item">
+                                <p class="news-date">12.09.2018</p>
+                                <img src="img/business-work-concept_1388-83.png" alt="News Image 2">
+                                <h4 class="news-title">Заголовок новости</h4>
+                                <p class="news-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                <p class="btn-more"><a href="">Подробнее</a><i>»</i></p>
+                            </li>
+                        </div>
                     </div>
-                </div>
-                <div class="grid-x grid-padding-x">
-                    <div class="large-6 medium-6 cell">
-                        <label>Choose Your Favorite</label>
-                        <input type="radio" name="pokemon" value="Red" id="pokemonRed"><label for="pokemonRed">Radio
-                        1</label>
-                        <input type="radio" name="pokemon" value="Blue" id="pokemonBlue"><label for="pokemonBlue">Radio
-                        2</label>
-                    </div>
-                    <div class="large-6 medium-6 cell">
-                        <label>Check these out</label>
-                        <input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label>
-                        <input id="checkbox2" type="checkbox"><label for="checkbox2">Checkbox 2</label>
-                    </div>
-                </div>
-                <div class="grid-x grid-padding-x">
-                    <div class="large-12 cell">
-                        <label>Textarea Label</label>
-                        <textarea placeholder="small-12.cell"></textarea>
-                    </div>
-                </div>
-            </form>
-        </div>
 
-        <div class="large-4 medium-4 cell">
-            <h5>Try one of these buttons:</h5>
-            <p><a href="#" class="button">Simple Button</a><br/>
-                <a href="#" class="success button">Success Btn</a><br/>
-                <a href="#" class="alert button">Alert Btn</a><br/>
-                <a href="#" class="secondary button">Secondary Btn</a></p>
-            <div class="callout">
-                <h5>So many components, girl!</h5>
-                <p>A whole kitchen sink of goodies comes with Foundation. Check out the docs to see them all, along with
-                    details on making them your own.</p>
-                <a href="http://foundation.zurb.com/sites/docs/" class="small button">Go to Foundation Docs</a>
+                </ul>
+                <div class="btn-news text-center">
+                    <a class="btn-allnews" href="#">Все новости</a>
+                </div>
+            </div>
+            <div class="top-products">
+                <div class="title-block">
+                    <p>Популярные товары</p>
+                    <hr class="line">
+                </div>
             </div>
         </div>
     </div>
 </div>
 
-<script src="js/vendor/jquery.js"></script>
-<script src="js/vendor/what-input.js"></script>
-<script src="js/vendor/foundation.js"></script>
-<script src="js/app.js"></script>
+<div class="recipes-block">
+    <div class="row expanded small-up-1 medium-up-2 large-up-5">
+        <div class="column padding-0">
+            <div class="folio">
+                <div class="hcaption">
+                    <div class="attr-icon">
+                        <div class="caption">
+                            <p>327 Recipes</p>
+                            <h3>ITALIAN</h3>
+                        </div>
+                    </div>
+                    <img src="img/portfolio/f1.jpg" alt="folio">
+                </div>
+            </div>
+
+        </div>
+        <div class="column padding-0">
+
+            <div class="folio">
+                <div class="hcaption">
+                    <div class="attr-icon">
+                        <div class="caption">
+                            <p>856 Recipes</p>
+                            <h3>INDIAN</h3>
+                        </div>
+                    </div>
+                    <img src="img/portfolio/f2.jpg" alt="folio">
+                </div>
+            </div>
+
+        </div>
+        <div class="column padding-0">
+
+            <div class="folio">
+                <div class="hcaption">
+                    <div class="attr-icon">
+                        <div class="caption">
+                            <p>27 Recipes</p>
+                            <h3>FRENCH</h3>
+                        </div>
+                    </div>
+                    <img src="img/portfolio/f3.jpg" alt="folio">
+                </div>
+            </div>
+
+        </div>
+        <div class="column padding-0">
+
+            <div class="folio">
+                <div class="hcaption">
+                    <div class="attr-icon">
+                        <div class="caption">
+                            <p>174 Recipes</p>
+                            <h3>STEAKHOUSE</h3>
+                        </div>
+                    </div>
+                    <img src="img/portfolio/f4.jpg" alt="folio">
+                </div>
+            </div>
+
+        </div>
+        <div class="column padding-0">
+
+            <div class="folio">
+                <div class="hcaption">
+                    <div class="attr-icon">
+                        <div class="caption">
+                            <p>131 Recipes</p>
+                            <h3>SEAFOOD</h3>
+                        </div>
+                    </div>
+                    <img src="img/portfolio/f5.jpg" alt="folio">
+                </div>
+            </div>
+
+        </div>
+        <div class="column padding-0">
+            <div class="folio">
+                <div class="hcaption">
+                    <div class="attr-icon">
+                        <div class="caption">
+                            <p>237 Recipes</p>
+                            <h3>SUSHI</h3>
+                        </div>
+                    </div>
+                    <img src="img/portfolio/f6.jpg" alt="folio">
+                </div>
+            </div>
+
+        </div>
+        <div class="column padding-0">
+            <div class="folio">
+                <div class="hcaption">
+                    <div class="attr-icon">
+                        <div class="caption">
+                            <p>329 Recipes</p>
+                            <h3>MEXICAN</h3>
+                        </div>
+                    </div>
+                    <img src="img/portfolio/f7.jpg" alt="folio">
+                </div>
+
+            </div>
+        </div>
+        <div class="column padding-0">
+            <div class="folio">
+                <div class="hcaption">
+                    <div class="attr-icon">
+                        <div class="caption">
+                            <p>145 Recipes</p>
+                            <h3>CHINESE</h3>
+                        </div>
+                    </div>
+                    <img src="img/portfolio/f8.jpg" alt="folio">
+                </div>
+            </div>
+        </div>
+        <div class="column padding-0">
+            <div class="folio">
+                <div class="hcaption">
+                    <div class="attr-icon">
+                        <div class="caption">
+                            <p>327 Recipes</p>
+                            <h3>PIZZA</h3>
+                        </div>
+                    </div>
+                    <img src="img/portfolio/f9.jpg" alt="folio">
+                </div>
+            </div>
+        </div>
+        <div class="column padding-0">
+            <div class="folio">
+                <div class="hcaption">
+                    <div class="attr-icon">
+                        <div class="caption">
+                            <p>1.437 Recipes</p>
+                            <h3>AMERICAN</h3>
+                        </div>
+                    </div>
+                    <img src="img/portfolio/f10.jpg" alt="folio">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row expanded">
+        <div class="small-12 medium-12 large-12">
+            <div class="paginations text-center">
+                <i class="prev-page"><a href="">«</a></i>
+                <ul class="list-page">
+                    <li class="current-page">1</li>
+                    <li><a href="javascript:void(0)">2</a></li>
+                    <li><a href="javascript:void(0)">3</a></li>
+                    <li><a href="javascript:void(0)">4</a></li>
+                    <li><a href="javascript:void(0)">5</a></li>
+                </ul>
+                <i class="next-page"><a href="">»</a></i>
+            </div>
+        </div>
+    </div>
+</div>
+<footer>
+    <div class="container">
+        <div class="row expanded">
+            <div class="small-12 medium-3 large-1">
+                <div class="logo">
+                    <img class="img-logo" src="img/logo2.png" alt="Fudi Logo">
+                </div>
+            </div>
+            <div class="large-7">
+                <nav class="navbar-expand-lg">
+                    <div class="collapse navbar-collapse">
+                        <ul class="navbar-nav footer-menu">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">О нас</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Наши услуги</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="#">Медиа</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="#">Отзывы</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="#">Наши контакты</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <div class="small-12 medium-3 large-2">
+                <div class="search-block footer-search">
+                    <label>
+                        <input type="search">
+                        <button class="search-button"><i class="fas fa-search"></i></button>
+
+                    </label>
+                    <i class="icon"></i>
+                </div>
+            </div>
+            <div class="small-12 medium-3 large-2">
+                <div class="contact-telephone footer-telephone large-text-right">
+                    <a class="tel" href="tel:7900556899">+7 (900) 55 68 99</a>
+                    <a class="email" href="malto:info@test.ru">info@test.ru</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="row expanded">
+            <div class="small-12 medium-6 large-6 ">
+                <div class="copyright-block">
+                    <p class="copyright large-text-left">
+                        ©2018 Cetera Labs All Rights Reserved.
+                    </p>
+                </div>
+            </div>
+            <div class="small-12 medium-6 large-6">
+                <div class="copyright-block">
+                    <p class="desigh-by large-text-right">
+                        <span>DESIGN BY:</span>
+                        <a href="">Cetera Labs</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</footer>
+
 </body>
 </html>
+
+
+
