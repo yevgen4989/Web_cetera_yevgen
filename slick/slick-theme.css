@@ -21,19 +21,15 @@
 {
     font-size: 0;
     line-height: 0;
-
     position: absolute;
     top: 50%;
-
     display: block;
     z-index: 2;
     padding: 0;
     -webkit-transform: translate(0, -50%);
     -ms-transform: translate(0, -50%);
     transform: translate(0, -50%);
-
     cursor: pointer;
-
     color: transparent;
     border: none;
     outline: none;
@@ -79,7 +75,7 @@
 
 .slick-prev
 {
-    left: 100px;
+    left: 50px;
 }
 [dir='rtl'] .slick-prev
 {
@@ -97,7 +93,7 @@
 
 .slick-next
 {
-    right: 100px;
+    right: 33px;
 }
 [dir='rtl'] .slick-next
 {

@@ -32,13 +32,20 @@
     font-family: Lato-LightItalic;
     src: url(../css/Lato-LightItalic.ttf) format('truetype')
 }
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1180px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
 
 .title-page {
     margin-bottom: 30px
 }
 
 .title-page h2 {
-    font-family: Lato-Bold, sans-serif;
+    font-family: 'Lato-Bold';
     font-size: 18px;
     color: #000
 }
@@ -59,13 +66,13 @@ a.btn-clear:hover {
 }
 
 h3 {
-    font-family: Lato-Bold, sans-serif;
+    font-family: 'Lato-Bold';
     font-size: 18px;
     color: #000
 }
 
 p {
-    font-family: Lato-Light, sans-serif;
+    font-family: 'Lato-Light';
     color: #000;
     font-size: 16px;
     margin: 12px 0
@@ -135,12 +142,12 @@ a.closed {
 
 .main-head p.top {
     font-size: 36px;
-    font-family: "Times New Roman", serif;
+    font-family: 'Times New Roman';
     font-style: italic
 }
 
 .main-head p {
-    font-family: Lato, sans-serif;
+    font-family: 'Lato';
     font-size: 14px;
     margin: 0;
     color: #fff
@@ -153,28 +160,27 @@ a.closed {
 
 .main-head h1 {
     margin: 0 0 18px;
-    font-family: Lato-Bold, sans-serif;
+    font-family: 'Lato-Bold';
     font-size: 100px
 }
 
 .main-head a.btn-clear {
     padding: 12px 48px;
-    font-family: Lato-Bold, sans-serif;
+    font-family: 'Lato-Bold';
     font-size: 18px;
     margin-bottom: 24px
 }
-
 .get-icon {
-    width: 96px;
-    height: 96px;
+    width: 107px;
+    height: 107px;
     text-align: center;
-    padding: 16px 0;
-    margin: 20px auto;
+    padding: 22px 0;
+    margin: 18px 131px;
     border: 2px solid #000;
     border-radius: 700px;
     -webkit-border-radius: 700px;
     -moz-border-radius: 700px;
-    -o-border-radius: 700px
+    -o-border-radius: 700px;
 }
 
 .title-line {
@@ -221,14 +227,14 @@ a.closed {
 }
 
 #testiSlide p {
-    font-family: Lato-Hairline, sans-serif;
+    font-family: 'Lato-Hairline';
     font-size: 30px;
     color: #fff;
     text-align: center
 }
 
 #testiSlide span {
-    font-family: Lato-LightItalic, sans-serif;
+    font-family: 'Lato-LightItalic';
     font-size: 16px;
     text-align: center;
     display: block;
@@ -343,14 +349,14 @@ a.closed {
 .attr-icon .caption p {
     font-size: 14px;
     font-style: italic;
-    font-family: "Times New Roman", serif;
+    font-family: 'Times New Roman';
     font-weight: 700;
     margin: 0;
     color: #fff
 }
 
 .attr-icon .caption h3 {
-    font-family: Lato, sans-serif;
+    font-family: 'Lato';
     font-size: 36px;
     font-weight: 700;
     color: #fff;
@@ -373,14 +379,14 @@ a.closed {
 }
 
 .fudi-count h3 {
-    font-family: Lato, sans-serif;
+    font-family: 'Lato';
     font-size: 36px;
     font-weight: 700;
     margin: 0
 }
 
 .fudi-count p {
-    font-family: Lato-Light, sans-serif;
+    font-family: 'Lato-Light';
     margin: 0
 }
 
@@ -438,20 +444,20 @@ footer {
 
 header {
     height: auto;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 17px;
+    margin-bottom: 25px;
 }
-.logo{
-    float: right;
+.row.container{
+    max-width: 1180px;
 }
-.logo .img-logo {
-    height: 65px;
-    
+.img-logo {
+    width: 65px;
+    margin-left: 8px;
 }
 
-.navbar-expand-lg {
-    margin-left: 70px;
-    margin-top: 15px;
+ul.navbar-nav {
+    margin-left: 10px;
+    margin-top: 24px;
     margin-bottom: 15px;
 }
 
@@ -461,14 +467,21 @@ ul.navbar-nav > li.nav-item > a.nav-link {
     font-size: 14px;
     text-transform: uppercase;
     font-weight: 500;
+    letter-spacing: 1.2px;
+    padding: 7px;
 }
 ul.navbar-nav > li.nav-item > a.nav-link:hover {
     text-decoration: underline;
 }
-
+li.nav-item {
+    padding-right: 26px;
+}
+li.nav-item:last-child {
+    padding-right: 0;
+}
 .search-block {
-    margin: 15px 0;
-
+    margin-top: 18px;
+    margin-left: 5px;
 }
 
 .search-block > label {
@@ -477,7 +490,7 @@ ul.navbar-nav > li.nav-item > a.nav-link:hover {
 }
 
 .search-block input[type="search"] {
-    width: 180px;
+    width: 220px;
     padding: 0;
     margin: 0;
     padding-left: 10px;
@@ -496,8 +509,8 @@ ul.navbar-nav > li.nav-item > a.nav-link:hover {
 
 .search-button {
     float: right;
-    margin-top: -32px;
-    margin-right: 16px;
+    font-size: 16px;
+    margin-top: -26px;
 }
 
 .content-slider {
@@ -508,34 +521,41 @@ ul.slider {
 }
 
 .contact-telephone {
-    margin-top: 20px;
+    margin-top: 27px;
+    margin-right: -9px;
+    margin-left: 29px;
 }
 
 .contact-telephone  a {
     color: black;
-    font-family: Lato-Bold, sans-serif;
+    font-family: Lato-Bold;
     font-size: 18px;
     font-weight: 500;
+    letter-spacing: 0.8px;
 }
 
 .contact-telephone > a:hover {
     color: black;
 }
 
-.breadcrumbs {
-    margin: 15px 0;
-    padding-left: 20px;
+ul.breadcrumbs {
+    margin: 9px 0 15px 4px;
+}
+ul.breadcrumbs li {
+    font-size: unset;
 }
 
-.breadcrumbs > p > a {
-    font-family: Lato, sans-serif;
+ul.breadcrumbs li > a {
+    font-family: 'Lato';
     font-size: 16px;
     color: #f57365;
-    padding: 1px 5px;
+    text-transform: none;
+    letter-spacing: 0.4px;
+    padding-right: 3px;
 }
 
-.breadcrumbs > p > a.current {
-    font-family: "Lato", sans-serif;
+ul.breadcrumbs li.current > a {
+    font-family: 'Lato';
     pointer-events: none;
     cursor: default;
     color: black;
@@ -573,17 +593,18 @@ ul.slider {
 .slider-item .block-slider {
     position: absolute;
     z-index: 4;
-    top: calc(30% + 0.6495rem);
+    top: calc(26.2% + 0.6495rem);
     width: 100%;
 }
 
 .slider-item .button-slider {
-    font-family: Lato-Bold, sans-serif;
+    font-family: 'Lato-Bold';
     font-size: 18px;
     color: white;
     z-index: 4;
     border: 3px white solid;
-    padding: 17.5px 103px;
+    padding: 22px 103px;
+    margin-left: 20px;
     outline: none;
     text-transform: uppercase;
     border-radius: 2px;
@@ -598,36 +619,41 @@ ul.slider {
 }
 
 .slider-item .title {
-    font-family: Lato-Bold, sans-serif;
+    font-family: 'Lato-Bold';
     font-size: 100px;
     color: white;
     z-index: 4;
     outline: none;
     text-transform: uppercase;
     line-height: normal;
-    margin-bottom: 41px;
+    margin: -14px -23px 0 0;
+    margin-bottom: 33px;
+    letter-spacing: 5px;
 }
 
 .slider-item .before-title {
-    font-family: Times New Roman, sans-serif;
+    font-family: 'Times New Roman';
     font-style: italic;
     font-size: 36px;
     color: white;
     z-index: 4;
     outline: none;
     opacity: 0.7;
-    margin: 0;
     line-height: normal;
+    margin-right: -24px;
+    letter-spacing: 3px;
+
 }
 
 .slider-item .after-title {
-    font-family: Lato, sans-serif;
+    font-family: 'Lato';
     font-size: 14px;
     color: white;
     z-index: 4;
     outline: none;
     text-transform: uppercase;
-    margin-top: 41px;
+    margin: 55px 0 0 25px;
+    letter-spacing: 1px;
 }
 
 .slider-item .after-title a {
@@ -645,37 +671,64 @@ ul.slider {
     outline: none;
 }
 .fudi-get{
-    margin-bottom: 100px;
+    margin-bottom: 90px;
+    margin-top: 30px;
 }
 p.title-category {
-    font-family: Lato-Bold, sans-serif;
+    font-family: 'Lato-Bold';
     font-size: 18px;
     text-transform: uppercase;
     color: black;
-    padding-left: 20px;
     text-shadow: 1px 0 0 rgba(0, 0, 0, 0.7);
+    padding-top: 0.5px;
+    padding-left: 5.5px;
+    letter-spacing: 1px;
+}
+.fudi-get h3{
+    font-family: 'Lato-Bold';
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #000;
+    margin: 0 auto 1px 91px;
+    letter-spacing: 0.8px;
+}
+.fudi-get p{
+    font-family: 'Lato-Light';
+    font-size: 16px;
+    margin-top: 15px;
+    text-align: center;
+    word-spacing: 3px;
+    letter-spacing: 0.1px;
 }
 
-.list-category {
+ul.list-category {
     list-style: none;
+    margin-left: 0;
+    margin-top: 22px;
 }
 
 .list-category > .category-item {
     border-bottom: 1px #f57365 solid;
+    width: 95%;
+    margin-left: 6px;
 }
 
 .list-category > .category-item:last-child {
     border: 0;
 }
-
+ul.list-category li.category-item:first-child a{
+    padding-top: 16px;
+    padding-bottom: 14px;
+}
 .list-category > .category-item > a {
     display: block;
-    font-family: Lato-Bold, sans-serif;
+    font-family: 'Lato-Bold';
     font-size: 16px;
     color: black;
     width: auto;
-    padding: 19px 0;
+    padding: 15px 0;
     text-shadow: 1px 0 0 rgba(0, 0, 0, 0.7);
+    letter-spacing: 0.8px;
 }
 
 .list-category > .category-item > a:hover {
@@ -685,7 +738,7 @@ p.title-category {
 }
 
 .title-block p {
-    font-family: Lato-Bold, sans-serif;
+    font-family: 'Lato-Bold';
     text-transform: uppercase;
     font-size: 18px;
     color: black;
@@ -710,14 +763,14 @@ hr.line {
 }
 
 .block-with-table .text-block > p {
-    font-family: Lato-Light, sans-serif;
+    font-family: 'Lato-Light';
     font-size: 16px;
 
 }
 
 .block-with-table .text-block .pod-title {
     display: block;
-    font-family: Lato-Bold, sans-serif;
+    font-family: 'Lato-Bold';
     font-size: 18px;
     color: black;
 }
@@ -731,7 +784,7 @@ ul.list-text-block p {
 }
 
 table {
-    font-family: Lato-Bold, sans-serif;
+    font-family: 'Lato-Bold';
     font-size: 16px;
     border-radius: 10px;
     border-spacing: 0;
@@ -746,7 +799,7 @@ th {
 }
 
 th, td {
-    font-family: Lato-Bold, sans-serif;
+    font-family: 'Lato-Bold';
     font-size: 16px;
     border-style: solid;
     border-width: 0 1px 1px 0;
@@ -773,7 +826,7 @@ tr td:last-child {
 }
 
 tr td:first-child {
-    font-family: Lato-Light, sans-serif;
+    font-family: 'Lato-Light';
     font-size: 16px;
     padding-right: 45px;
 }
@@ -798,25 +851,25 @@ tr td:first-child {
 }
 
 .inputs input::-webkit-input-placeholder {
-    font-family: Lato, sans-serif;
+    font-family: 'Lato';
     font-size: 18px;
     color: black;
 }
 
 .inputs input::-moz-placeholder {
-    font-family: Lato, sans-serif;
+    font-family: 'Lato';
     font-size: 18px;
     color: black;
 }
 
 .inputs input:-moz-placeholder {
-    font-family: Lato, sans-serif;
+    font-family: 'Lato';
     font-size: 18px;
     color: black;
 }
 
 .inputs input:-ms-input-placeholder {
-    font-family: Lato, sans-serif;
+    font-family: 'Lato';
     font-size: 18px;
     color: black;
 }
@@ -844,7 +897,7 @@ tr td:first-child {
 }
 
 .holder label {
-    font-family: Lato, sans-serif;
+    font-family: 'Lato';
     font-size: 18px;
     color: black;
     height: 100%;
@@ -864,13 +917,14 @@ input[type="submit"] {
     background: #f57365;
     padding: 0;
     text-transform: uppercase;
-    font-family: Lato-Bold, sans-serif;
+    font-family: 'Lato-Bold';
     font-size: 18px;
     color: white;
     border: 0;
     border-radius: 5px;
     outline: none;
     transition: all 0.3s;
+    float: left;
 }
 input[type="submit"]:hover{
     background-color: #d05e52;
@@ -891,7 +945,7 @@ li.news-item:first-child, li.news-item:last-child {
 }
 
 li.news-item p.news-date {
-    font-family: Lato, sans-serif;
+    font-family: 'Lato';
     font-size: 14px;
     color: #a5a5a5;
     margin-bottom: 10px;
@@ -899,7 +953,7 @@ li.news-item p.news-date {
 }
 
 li.news-item h4.news-title {
-    font-family: Lato-Bold, sans-serif;
+    font-family: 'Lato-Bold';
     font-size: 16px;
     color: #000;
     margin: 16px 0;
@@ -909,13 +963,13 @@ li.news-item h4.news-title {
 }
 
 li.news-item p.news-description {
-    font-family: Lato-Light, sans-serif;
+    font-family: 'Lato-Light';
     font-size: 16px;
     margin-bottom: 15px;
 }
 
 li.news-item p.btn-more {
-    font-family: Lato-Bold, sans-serif;
+    font-family: 'Lato-Bold';
     font-size: 16px;
     color: black;
 }
@@ -946,7 +1000,7 @@ p.btn-more i {
 }
 
 .btn-news a.btn-allnews {
-    font-family: Lato-Bold, sans-serif;
+    font-family: 'Lato-Bold';
     font-size: 18px;
     text-transform: uppercase;
     color: black;
@@ -996,7 +1050,7 @@ ul.list-page li {
 }
 
 ul.list-page li > a {
-    font-family: Lato-Bold, sans-serif;
+    font-family: 'Lato-Bold';
     font-size: 18px;
     color: #f57365;
     outline: 0;
@@ -1004,7 +1058,7 @@ ul.list-page li > a {
 }
 
 ul.list-page li.current-page {
-    font-family: Lato-Bold, sans-serif;
+    font-family: 'Lato-Bold';
     font-size: 18px;
     color: #a5a5a5;
     background-color: #f1f1f1;
@@ -1064,26 +1118,26 @@ ul.navbar-nav.footer-menu > li.nav-item > a.nav-link:hover {
 
 .contact-telephone.footer-telephone a.email {
     color: #f57365;
-    font-family: Lato-Bold, sans-serif;
+    font-family: 'Lato-Bold';
     font-size: 18px;
 }
 
 p.copyright {
     color: #8b8b8b;
-    font-family: Lato-Light, sans-serif;
+    font-family: 'Lato-Light';
     font-size: 14px;
     padding-left: 35px;
 }
 
 p.desigh-by span {
     text-transform: uppercase;
-    font-family: Lato-Light, sans-serif;
+    font-family: 'Lato-Light';
     font-size: 14px;
     color: #8b8b8b;
 }
 
 p.desigh-by a {
-    font-family: Lato, sans-serif;
+    font-family: 'Lato';
     font-size: 14px;
     color: black;
 }
@@ -1094,6 +1148,32 @@ p.desigh-by a {
 .column.padding-0{
     padding: 0;
 }
+.columns.padding-0{
+    padding: 0;
+}
+.columns.padding-0.build{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.three-block .columns.padding-0.build:first-child{
+    padding-left: 0;
+    padding-right: 20px;
+}
+.three-block .columns.padding-0.build:last-child{
+    padding-right: 0;
+    padding-left: 40px;
+}
+.three-block .columns.padding-0.build:first-child .fudi-get h3{
+    padding-left: 22px;
+}
+.three-block .columns.padding-0.build:last-child .fudi-get h3{
+    padding-left: 22px;
+}
+.container.padding-0{
+    padding: 0;
+}
 .copyright-block{
     margin-top: 95px;
 }
+
